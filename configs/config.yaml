@@ -1,0 +1,50 @@
+# Configuration file for flexidot.py
+
+# Modify your frequently used cmd line input values to your needs and set new defaults
+
+cmd_input_arguments:  # This section contains defaults for command line inputs, modify as needed
+  output_options:
+    output_file_prefix: null
+    filetype: PNG
+    collage_output: [4, 5]
+    alphabetic_sorting: false
+
+  calculation_parameters:
+    wordsize: 10
+    plotting_mode: self
+    type: nucl
+    wobble_conversion: false
+    substitution_count: 0
+    reverse_complement_search: true
+    only_vs_first_seq: false
+
+  graphic_formatting:
+    line_width: 1.0
+    line_col_for: black
+    line_col_rev: green
+    x_label_pos: false
+    label_size: 10
+    spacing: 0.04
+    mirror_y_axis: false
+    plot_size: 10
+    representation: 0
+    length_scaling: false
+    title_length: [20, B]
+
+  lcs_shading:
+    lcs_shading: false
+    lcs_shading_num: 5
+    lcs_shading_ref: 0
+    lcs_shading_interval_len: 50
+    lcs_shading_ori: 0
+
+  logging:
+    log_level: INFO
+    log_file: null
+
+# Modify other parameters carefully (risk of breaking functionality)
+
+misc_parameters:  # This section contains other parameters for flexidot, modify with care
+  calculation_parameters:
+    max_N_percentage: 49
+    ambig_residue: N
